@@ -1,1 +1,39 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15%;
+  position: fixed;
+  top: 0;
+}
+#header .logo-img {
+  height: 47px;
+  width: auto;
+}
+#header .header-menu {
+  list-style: none;
+}
+#header .header-menu .menu-item {
+  display: inline-block;
+  padding: 10px;
+}
+#header .header-menu .menu-item a {
+  text-decoration: none;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  font-style: normal;
+}
+#header .header-menu .item-active {
+  color: #5754FF;
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,46 @@
 $blue: #1e43c9;
 $white: #FFFFFF;
 $text: #333333;
+$purple: #5754FF;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15%;
+    position: fixed;
+    top: 0;
+    .logo-img{
+        height: 47px;
+        width: auto;
+    }
+    .header-menu{
+        list-style: none;
+        .menu-item{
+            display: inline-block;
+
+            padding: 10px;
+            a{
+                text-decoration: none;
+                font-family: "Roboto", Sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                color: $text;
+                font-style: normal;
+            }
+        }
+        .item-active{
+            color: $purple;
+        }
+    }
+}

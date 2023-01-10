@@ -8,46 +8,106 @@ $purple: #5754FF;
     src: url('../fonts/Roboto-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+.toUp{
+    border: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 70%;
+    &:hover{
+        opacity: 100%;
+    }
+}
+
 #header{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20%;
-    position: fixed;
-    top: 0;
-    .logo-img{
-        height: 47px;
-        width: auto;
-    }
-    .header-menu{
-        list-style: none;
-        .menu-item{
-            display: inline-block;
-
-            padding: 10px;
-            a{
-                text-decoration: none;
-                font-family: "Roboto", Sans-serif;
-                font-size: 15px;
-                font-weight: 600;
-                color: $text;
-                font-style: normal;
+    justify-content: left;
+    .container{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        padding: 10px 0;
+        margin-left: 20%;
+        top: 0;
+        .logo_link{
+            padding: 0;
+            height: 47px;
+            .logo-img{
+                height: 100%;
+                width: auto;
             }
         }
-        .item-active{
-            color: $purple;
+        
+        .header-menu{
+            list-style: none;
+            .menu-item{
+                display: inline-block;
+                padding: 10px 20px;
+                a{
+                    text-decoration: none;
+                    font-family: "Roboto", Sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $text;
+                    font-style: normal;
+                    transition: 0.4s;
+                    &:hover{
+                        color: $purple;
+                    }
+                }
+            }
+            .item-active{
+                a{
+                    color: $purple;
+                }
+                
+            }
+        }
+        .call_me{
+            padding: 12px 24px;
+            font-family: 'Roboto', 'sans-serif';
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0 10px;
+            color: $white;
+            background-color: $purple;
+            border: solid 2px $purple;
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover{
+                background-color: $white;
+                color: $purple;
+
+            }
+        }
+        .select_lang{
+            padding: 12px;
+            color: #666;
+            border: solid 1px #eaeaea;
+            font-size: 16px;
+            font-family: "-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue","sans-serif";
         }
     }
+    
 }
 
 
 #PronasSection
 {
+    padding-top: 60px;
     .bg
     {
         display: flex;

@@ -2,42 +2,98 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
 * {
   margin: 0;
   padding: 0;
 }
 
+.toUp {
+  border: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+  opacity: 70%;
+}
+.toUp:hover {
+  opacity: 100%;
+}
+
 #header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+}
+#header .container {
+  display: flex;
   align-items: center;
-  padding: 8px 20%;
   position: fixed;
+  padding: 10px 0;
+  margin-left: 20%;
   top: 0;
 }
-#header .logo-img {
+#header .container .logo_link {
+  padding: 0;
   height: 47px;
+}
+#header .container .logo_link .logo-img {
+  height: 100%;
   width: auto;
 }
-#header .header-menu {
+#header .container .header-menu {
   list-style: none;
 }
-#header .header-menu .menu-item {
+#header .container .header-menu .menu-item {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
 }
-#header .header-menu .menu-item a {
+#header .container .header-menu .menu-item a {
   text-decoration: none;
   font-family: "Roboto", Sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #333333;
   font-style: normal;
+  transition: 0.4s;
 }
-#header .header-menu .item-active {
+#header .container .header-menu .menu-item a:hover {
   color: #5754FF;
 }
+#header .container .header-menu .item-active a {
+  color: #5754FF;
+}
+#header .container .call_me {
+  padding: 12px 24px;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  color: #FFFFFF;
+  background-color: #5754FF;
+  border: solid 2px #5754FF;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#header .container .call_me:hover {
+  background-color: #FFFFFF;
+  color: #5754FF;
+}
+#header .container .select_lang {
+  padding: 12px;
+  color: #666;
+  border: solid 1px #eaeaea;
+  font-size: 16px;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", "sans-serif";
+}
 
+#PronasSection {
+  padding-top: 60px;
+}
 #PronasSection .bg {
   display: flex;
   justify-content: center;

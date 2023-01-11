@@ -171,31 +171,39 @@ $purple: #5754FF;
 		}
 	}
 }
-#MainSection {
+
+  #MainSection {
 	border: 1px solid black;
 	width: 100%;
-	height: 250px;
+	height: 320px;
 	margin-top: 70px;
 	margin-bottom: 0px;
-	padding: 80px 0px 80px 0px;
+	padding: 80px 0 80px 0;
 	background-image: url(/images/MainSection_bacground.png);
 	background-position: 0px -211px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	.text1 {
-		font-family: "Roboto", Sans-serif;
-		color: white;
-		font-size: 48pt;
-		font-weight: 900;
-		padding: 0px 250px 0px 0px;
-	}
+	.allinfo {
+		border: 1px solid black;
+	   
+		width: 50%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		.text1 {
+
+			font-family: "Roboto-Bold", Sans-serif;
+			color: white;
+			font-size: 48pt;
+			
+			font-weight: 900;
+			border: 1px solid black;
+			height: fit-content
+		}
+   }
 }
-.allinfo {
-	border: 1px solid black;
-	width: 50%;
-	height: 70%;
-	display: flex;
-}
+  
 body{
     height: 100%;
     top: 0;

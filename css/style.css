@@ -230,6 +230,38 @@
   color: #1916aa;
 }
 
+#FeedbackGoogleSection .bg {
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+#FeedbackGoogleSection .bg .first {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+#FeedbackGoogleSection .bg .text2 {
+  color: #333333;
+  text-align: center;
+  font-size: 65px;
+  font-family: "Roboto-Black", sans-serif;
+}
+#FeedbackGoogleSection .bg .line {
+  background-color: #5754FF;
+  width: 245px;
+  height: 8px;
+}
+
 body {
   height: 100%;
   top: 0;

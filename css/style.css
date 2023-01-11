@@ -114,7 +114,7 @@
   position: relative;
 }
 #PronasSection .op {
-  z-index: 2;
+  z-index: 0;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -124,7 +124,6 @@
   top: 0;
 }
 #PronasSection .bg {
-  z-index: 5;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -142,25 +141,30 @@
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  z-index: 10;
 }
 #PronasSection .bg .text2 {
   color: #333333;
   text-align: center;
   font-size: 65px;
   font-family: "Roboto-Black", sans-serif;
+  z-index: 10;
+  display: block;
 }
 #PronasSection .bg .line {
   background-color: #5754FF;
-  width: 245px;
+  width: 180px;
   height: 8px;
+  z-index: 10;
 }
 #PronasSection .pic {
-  z-index: 5;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
 #PronasSection .pic .soldphoto {
+  z-index: 10;
   background-image: url(/images/SoldierPicture.png);
   height: 780px;
   min-width: 595px;
@@ -168,6 +172,7 @@
   background-size: cover;
 }
 #PronasSection .pic .words {
+  z-index: 10;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   padding: 25px 0px;

@@ -111,10 +111,11 @@
   -webkit-animation-name: slideInUp;
           animation-name: slideInUp;
   background-color: #FFFFFF;
+  padding: 15% 0px;
 }
 #PronasSection .bg {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -145,8 +146,6 @@
 }
 #PronasSection .pic {
   display: flex;
-  justify-content: left;
-  flex-direction: column;
   align-items: flex-start;
 }
 #PronasSection .pic .soldphoto {
@@ -156,22 +155,16 @@
   width: 800px;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 80px 0px 80px 0px;
   position: relative;
   top: -130px;
 }
 #PronasSection .pic .words {
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
-  align-self: flex-end;
   font-family: "Open Sans", sans-serif;
   height: 636px;
   width: 800px;
-  font-size: 24px;
+  font-size: 20px;
+  padding: 25px 0px;
   color: #393434;
-  padding: 80px 80px 80px;
-  position: relative;
   top: -1100px;
 }
 

@@ -113,8 +113,28 @@ $purple: #5754FF;
 	background-color: #FFFFFF;
 	padding: 0 15%; 
     padding-top: 5%;
+	position: relative;
 
+	.op 
+	{
+		z-index: 2;
+		height: 100%;
+
+		width: 100%;
+
+		position: absolute;
+
+		opacity: 86%;
+
+		background-color: #FFFFFF;
+
+		left: 0;
+		
+		top: 0;
+	}
 	.bg {
+
+		z-index: 5;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
@@ -146,6 +166,7 @@ $purple: #5754FF;
 		}
 	}
 	.pic {
+		z-index: 5;
 		display: flex;
 		justify-content: space-between;
         padding: 0;
@@ -212,7 +233,7 @@ $purple: #5754FF;
 			line-height:40px;
 			font-family:"Roboto", Sans-serif;
 		    font-weight: 450;
-			color: rgb(119, 35, 35);
+			color: white;
 		}
 		.buttKonsultacia:hover {
 			background-color: white;

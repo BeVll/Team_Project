@@ -178,19 +178,17 @@ $purple: #5754FF;
 }
 
   #MainSection {
-	border: 1px solid black;
 	width: 100%;
-	height: 320px;
+	height:520px;
 	margin-top: 70px;
 	margin-bottom: 0px;
-	padding: 80px 0 80px 0;
 	background-image: url(/images/MainSection_bacground.png);
 	background-position: 0px -211px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	.allinfo {
-		border: 1px solid black;
-	   
+		margin-left: 400px;
+		justify-content: center;
 		width: 50%;
 		height: 100%;
 		display: flex;
@@ -198,13 +196,37 @@ $purple: #5754FF;
 
 		.text1 {
 
-			font-family: "Roboto-Bold", Sans-serif;
+			font-family: "Roboto-Black", Sans-serif;
 			color: white;
-			font-size: 48pt;
-			
-			font-weight: 900;
-			border: 1px solid black;
+			font-size: 64pt;
+	
 			height: fit-content
+		}
+		.text2 {
+			margin: 30px 0 30px 0;
+			font-family: "Roboto", Sans-serif;
+			color: white;
+			font-size: 12pt;
+			font-weight: 550;
+
+			height: fit-content;
+			line-height: 1.5 ;
+		}
+		.buttKonsultacia{
+			margin: 20px 0 20px 0;
+			width: 250px;
+			height: 40px;
+			background-color: none;
+			border: 2px solid white;
+			text-align: center;
+			line-height:40px;
+			font-family:"Roboto", Sans-serif;
+		    font-weight: 450;
+			color: white;
+		}
+		.buttKonsultacia:hover {
+			background-color: white;
+			color: #1916aa
 		}
    }
 }

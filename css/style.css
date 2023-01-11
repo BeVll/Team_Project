@@ -210,7 +210,7 @@
   line-height: 40px;
   font-family: "Roboto", Sans-serif;
   font-weight: 450;
-  color: white;
+  color: rgb(119, 35, 35);
 }
 #MainSection .allinfo .buttKonsultacia:hover {
   background-color: white;

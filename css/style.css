@@ -101,16 +101,17 @@
 
 #PronasSection {
   padding-top: 60px;
-  background-image: url(/images/bg_dursec.jpg);
+  background-image: url(/images/whitesky.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  height: 1063.5px;
+  background-size: 100% auto;
+  position: relative;
   -webkit-animation-duration: 1.25s;
           animation-duration: 1.25s;
   -webkit-animation-name: slideInUp;
           animation-name: slideInUp;
   background-color: #FFFFFF;
-  padding: 0 15%;
-  padding-top: 5%;
+  padding: 15% 0px;
 }
 #PronasSection .bg {
   display: flex;
@@ -119,10 +120,10 @@
   align-items: center;
 }
 #PronasSection .bg .first {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
   text-align: center;
-  color: #333333;
+  color: rgb(58, 58, 58);
   display: block;
   font-weight: 400;
   font-style: normal;
@@ -133,64 +134,92 @@
 }
 #PronasSection .bg .text2 {
   color: #333333;
+  font-size: 21px;
   text-align: center;
-  font-size: 65px;
-  font-family: "Roboto-Black", sans-serif;
+  font-size: 90px;
+  font-family: Roboto, sans-serif;
 }
 #PronasSection .bg .line {
-  background-color: #5754FF;
+  background-color: rgb(64, 94, 201);
   width: 245px;
   height: 8px;
 }
 #PronasSection .pic {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
+  align-items: flex-start;
 }
 #PronasSection .pic .soldphoto {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: url(/images/SoldierPicture.png);
-  height: 780px;
-  min-width: 595px;
+  height: 1000px;
+  width: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
+  position: relative;
+  top: -130px;
 }
 #PronasSection .pic .words {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  height: 636px;
+  width: 800px;
+  font-size: 20px;
   padding: 25px 0px;
   color: #393434;
-  font-weight: 200;
-  padding-top: 180px;
+  top: -1100px;
 }
 
 #MainSection {
-  border: 1px solid black;
   width: 100%;
-  height: 320px;
+  height: 520px;
   margin-top: 70px;
   margin-bottom: 0px;
-  padding: 80px 0 80px 0;
   background-image: url(/images/MainSection_bacground.png);
   background-position: 0px -211px;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 #MainSection .allinfo {
-  border: 1px solid black;
+  margin-left: 400px;
+  justify-content: center;
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 #MainSection .allinfo .text1 {
-  font-family: "Roboto-Bold", Sans-serif;
+  font-family: "Roboto-Black", Sans-serif;
   color: white;
-  font-size: 48pt;
-  font-weight: 900;
-  border: 1px solid black;
+  font-size: 64pt;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+#MainSection .allinfo .text2 {
+  margin: 30px 0 30px 0;
+  font-family: "Roboto", Sans-serif;
+  color: white;
+  font-size: 12pt;
+  font-weight: 550;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 1.5;
+}
+#MainSection .allinfo .buttKonsultacia {
+  margin: 20px 0 20px 0;
+  width: 250px;
+  height: 40px;
+  background-color: none;
+  border: 2px solid white;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 450;
+  color: white;
+}
+#MainSection .allinfo .buttKonsultacia:hover {
+  background-color: white;
+  color: #1916aa;
 }
 
 body {

@@ -117,24 +117,16 @@ $purple: #5754FF;
 
 	.op 
 	{
-		z-index: 2;
+		z-index: 0;
 		height: 100%;
-
 		width: 100%;
-
 		position: absolute;
-
 		opacity: 86%;
-
 		background-color: #FFFFFF;
-
 		left: 0;
-		
 		top: 0;
 	}
 	.bg {
-
-		z-index: 5;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
@@ -152,25 +144,30 @@ $purple: #5754FF;
 			-webkit-text-size-adjust: 100%;
 			-moz-text-size-adjust: 100%;
 			text-size-adjust: 100%;
+			z-index: 10;
 		}
 		.text2 {
 			color: $text;
 			text-align: center;
 			font-size: 65px;
 			font-family: 'Roboto-Black', sans-serif;
+			z-index: 10;
+			display: block;
 		}
 		.line {
 			background-color: $purple;
-			width: 245px;
+			width: 180px;
 			height: 8px;
+			z-index: 10;
 		}
 	}
 	.pic {
-		z-index: 5;
+		z-index: 10;
 		display: flex;
 		justify-content: space-between;
         padding: 0;
 		.soldphoto {
+			z-index: 10;
 			background-image: url(/images/SoldierPicture.png);
 			height: 780px;
 			min-width: 595px;
@@ -178,6 +175,7 @@ $purple: #5754FF;
 			background-size: cover;
 		}
 		.words {
+			z-index: 10;
 			font-family: "Open Sans", sans-serif;
 			font-size: 18px;
 			padding: 25px 0px;

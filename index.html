@@ -52,7 +52,7 @@
           </div>
     </section>
     <section id="PronasSection">
-        
+        <div class="op"></div>
         <div class="bg">         
             
             
@@ -60,15 +60,15 @@
             <div class="first">
                 <p> <strong>ІНФОРМАЦІЯ ПРО КОМПАНІЮ</strong> </p>
             </div>
-            <div>
-                <h2 class="text2"> <strong>ПРО НАС</strong> </h2>
+            <div class="text2">
+                <p> <strong>ПРО НАС</strong> </p>
             </div>
 
             <div class="line"></div>
 
             
         </div>
-        <div class="op"></div>
+       
 
         <div class="pic">
             <div class="soldphoto"></div>
@@ -140,8 +140,16 @@
         
     </section>
 
-    <a href="#MainSection" class="toUp">
+    <button type="button" onclick="ToTop()" class="toUp">
         <img src="https://vr.kh.ua/wp-content/plugins/wpfront-scroll-top/images/icons/1.png" alt="">
-    </a>
+    </button>
+    <script>
+        function ToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>

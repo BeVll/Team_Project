@@ -107,8 +107,16 @@
         
     </section>
 
-    <a href="#MainSection" class="toUp">
+    <button type="button" onclick="ToTop()" class="toUp">
         <img src="https://vr.kh.ua/wp-content/plugins/wpfront-scroll-top/images/icons/1.png" alt="">
-    </a>
+    </button>
+    <script>
+        function ToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>

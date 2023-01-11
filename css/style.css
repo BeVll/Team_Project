@@ -26,13 +26,16 @@
 }
 
 #header {
-  display: flex;
-  justify-content: left;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 15;
+  position: fixed;
+  margin: 0;
+  top: 0;
 }
 #header .container {
   display: flex;
   align-items: center;
-  position: fixed;
   padding: 10px 0;
   margin-left: 20%;
   top: 0;
@@ -93,6 +96,16 @@
 
 #PronasSection {
   padding-top: 60px;
+  background-image: url(/images/whitesky.jpg);
+  background-repeat: no-repeat;
+  height: 1063.5px;
+  background-size: 100% auto;
+  position: relative;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+  background-color: #FFFFFF;
 }
 #PronasSection .bg {
   display: flex;
@@ -100,122 +113,67 @@
   flex-direction: column;
   align-items: center;
 }
-
-
-
-/*Olegs Section */
-#PronasSection .bg .first 
-{
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      font-size: 22px;
-      text-align: center;
-      color: rgb(58, 58, 58);
-      display: block;
-      font-weight: 400;
-      font-style: normal;
-      line-height: 27px;
-      -webkit-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%;
-              text-size-adjust: 100%;
+#PronasSection .bg .first {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(58, 58, 58);
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
-#PronasSection .bg .text2 
-{
+#PronasSection .bg .text2 {
   color: #333333;
   font-size: 21px;
   text-align: center;
   font-size: 90px;
   font-family: Roboto, sans-serif;
 }
-#PronasSection .bg .line
-{
+#PronasSection .bg .line {
   background-color: rgb(64, 94, 201);
   width: 245px;
   height: 8px;
-}/*# sourceMappingURL=style.css.map */
-
-#PronasSection .pic 
-{
+}
+#PronasSection .pic {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  align-items:flex-start;
-
+  align-items: flex-start;
 }
-
-#PronasSection
-{
-  background-image: url(/images/whitesky.jpg);
-
-  background-repeat: no-repeat;
-
-  height: 1063.5px;
-
-  background-size: 100% auto;
-
-  position: relative;
-
-  animation-duration: 1.25s;
-
-  animation-name: slideInUp ;
-
-  background-color: #FFFFFF;
-
-}
-
-#PronasSection .pic .soldphoto 
-{
+#PronasSection .pic .soldphoto {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
   background-image: url(/images/SoldierPicture.png);
   height: 1000px;
   width: 800px;
   background-repeat: no-repeat;
-
   background-size: 100% auto;
   padding: 80px 0px 80px 0px;
-
   position: relative;
   top: -130px;
 }
-
-#PronasSection .pic .words 
-{
+#PronasSection .pic .words {
   display: flex;
-
   justify-content: right;
-
   flex-direction: column;
-
   align-self: flex-end;
-
   font-family: "Open Sans", sans-serif;
-
   height: 636px;
-
   width: 800px;
-
   font-size: 24px;
-
   color: #393434;
-
   padding: 80px 80px 80px;
-
   position: relative;
-
   top: -1100px;
 }
 
-
-/*Ending of my section -Oleg*/
-
-
-
-#MainSection{
-
+#MainSection {
   border: 1px solid black;
   width: 100%;
   height: 250px;
-
   margin-top: 70px;
   margin-bottom: 0px;
   padding: 80px 0px 80px 0px;
@@ -224,17 +182,22 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-.allinfo{
-border: 1px solid black;
-width: 50%;
-height: 70%;
-display: flex;
+#MainSection .text1 {
+  font-family: "Roboto", Sans-serif;
+  color: white;
+  font-size: 48pt;
+  font-weight: 900;
+  padding: 0px 250px 0px 0px;
 }
-#MainSection .text1{
 
-font-family: "Roboto", Sans-serif;
-color: white;
-font-size: 48pt;
-font-weight:900;
-padding: 0px 250px 0px 0px;
+.allinfo {
+  border: 1px solid black;
+  width: 50%;
+  height: 70%;
+  display: flex;
 }
+
+body {
+  height: 100%;
+  top: 0;
+}/*# sourceMappingURL=style.css.map */

@@ -291,6 +291,45 @@ $purple: #5754FF;
 			height: 8px;
 		}
 	}
+
+	.box
+	{
+		border: 3px solid black;
+		
+		width: 450px;
+
+		padding: 10px 20px;
+
+		flex-direction: row;
+
+		align-self: center;
+
+		position: relative;
+
+		box-sizing: border-box;
+
+		display: flex;
+
+		.outerbox .txt
+		{
+			color: #333333;
+			font-family: "Open Sans", Sans-serif;
+			font-size: 17px;
+			font-weight: 400px;
+			padding: 20px 0px;
+		}
+		.outerbox .name .photo .rlname
+		{
+			color: #4c4cff;
+			font-family: "Roboto", Sans-serif;
+			font-size: 16px;
+			font-weight: 600px;
+		}
+		.outerbox .name .photo .fullpic
+		{
+			background-image: url(/images/yulia.jpg);
+		}
+	}
 }
 
 #FooterSection{

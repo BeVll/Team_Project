@@ -312,8 +312,10 @@ $purple: #5754FF;
 #FeedbackGoogleSection
 {
 	background-color:#9595FF21;
+	padding-top: 70px;
 	.bg {
-
+		
+		padding-bottom: 30px;
 		z-index: 5;
 		display: flex;
 		justify-content: space-between;
@@ -332,6 +334,7 @@ $purple: #5754FF;
 			-webkit-text-size-adjust: 100%;
 			-moz-text-size-adjust: 100%;
 			text-size-adjust: 100%;
+			padding: 0 20px;
 		}
 		.text2 {
 			color: $text;
@@ -348,6 +351,7 @@ $purple: #5754FF;
 
 	.GridShow
 	{
+		
 		display: grid;
 
 		grid-template-columns: 50% 50%;

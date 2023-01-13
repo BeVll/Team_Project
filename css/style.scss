@@ -245,7 +245,120 @@ $purple: #5754FF;
 }
 
 #PoslugySection{
-
+	padding: 5% 20%;
+	.header-section{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		.first {
+			font-family: "Roboto", sans-serif;
+			font-size: 16px;
+			text-align: center;
+			color: $text;
+			display: block;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 27px;
+			-webkit-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			text-size-adjust: 100%;
+			z-index: 10;
+		}
+		.text2 {
+			color: $text;
+			text-align: center;
+			font-size: 43px;
+			font-family: 'Roboto-Black', sans-serif;
+			z-index: 10;
+			display: block;
+		}
+		.line {
+			background-color: $purple;
+			width: 180px;
+			height: 8px;
+			z-index: 10;
+		}
+	}
+	.content{
+		table{
+			width: 100%;
+			border-spacing: 20px;
+			tr{
+				height: 280px;
+				td{
+					height: 280px;
+					
+					div{
+						width: 100%;
+						height: 100%;
+						position: relative;
+						transform-style: preserve-3d;
+						transition: 1s;
+						&:hover{
+							transform: rotate3d(1, 0, 0, 180deg);;
+							backface-visibility: visible;
+						}
+						.photo-bg{
+							background-size: cover;
+							background-repeat: no-repeat;
+							height: 100%;
+							max-width: 100%;
+							left: 0;
+							z-index: 2;
+							
+							div{
+								z-index: 10;
+								display: flex;
+								justify-content: end;
+								flex-direction: column;
+								text-align: center;
+								span{
+									color: $white;
+									font-family: "Roboto-Bold";
+									text-align: center;
+									font-size: 32px;
+									
+									overflow-wrap: break-word;
+									word-wrap: break-word;
+									padding: 30px;
+									
+								
+								}
+								
+							}
+							
+							
+						}
+						.bg{
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background-color: black;
+							opacity: 30%;
+							z-index: 2;
+							
+						}
+						.bg-front{
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background-color: transparent;
+							background-image: linear-gradient(180deg, #4C4CFF 0%, #1F1FFF 100%);
+							z-index: -1;
+						
+						}
+					}
+					
+					
+				}
+			}
+		}
+	}
 }
 
 #PortfolioSection{

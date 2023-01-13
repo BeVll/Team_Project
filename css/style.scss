@@ -177,11 +177,14 @@ $purple: #5754FF;
 		.words {
 			z-index: 10;
 			font-family: "Open Sans", sans-serif;
-			font-size: 18px;
+			font-size: 16px;
 			padding: 25px 0px;
 			color: #393434;			
-            font-weight: 200;
+            font-weight: 200px;
             padding-top: 180px;
+			letter-spacing: 1px;
+			line-height: .7cm;
+
 		}
 	}
 }
@@ -421,6 +424,7 @@ $purple: #5754FF;
 
 #FeedbackGoogleSection
 {
+	background-color:#9595FF21;
 	.bg {
 
 		z-index: 5;
@@ -455,48 +459,115 @@ $purple: #5754FF;
 		}
 	}
 
-	.box
+	.GridShow
 	{
-		border: 3px solid black;
+		display: grid;
+
+		grid-template-columns: 50% 50%;
+
+		padding: 40px 300px;
+
+		grid-row-gap: 20px;
+
+		grid-column-gap: 10px ;
+
+		.box
+		{
+			box-shadow: rgba(0, 0, 0, 0.28) 0px 0px 5px 0px;
+			border: 2px solid rgba(26, 24, 24, 0.184);
 		
-		width: 450px;
+			flex-direction: row;
 
-		padding: 10px 20px;
+			align-self: center;
 
-		flex-direction: row;
+			position: relative;
 
-		align-self: center;
+			box-sizing: border-box;
 
-		position: relative;
+			border-radius: 4px;
 
-		box-sizing: border-box;
+			
 
-		display: flex;
+			.outerbox
+			{
+				padding: 10px 20px;
+				height: 275px;
+				.txt
+				{
+					height: 130px;
+					letter-spacing: 1px;
+					line-height: .7cm;
+					color: #333333;
+					font-family: "Open Sans", Sans-serif;
+					font-size: 15px;
+					font-weight: 100px;
+					padding: 20px 0px;
 
-		.outerbox .txt
-		{
-			color: #333333;
-			font-family: "Open Sans", Sans-serif;
-			font-size: 17px;
-			font-weight: 400px;
-			padding: 20px 0px;
-		}
-		.outerbox .name .photo .rlname
-		{
-			color: #4c4cff;
-			font-family: "Roboto", Sans-serif;
-			font-size: 16px;
-			font-weight: 600px;
-		}
-		.outerbox .name .photo .fullpic
-		{
-			background-image: url(/images/yulia.jpg);
-		}
-		.outerbox .name .photo
-		{
-			background-image: url(/images/yulia.jpg);
+					
+				}
+				.name
+				{
+					.photo
+					{
+						display: flex ;
+						align-items: center;
+						.rlname
+						{
+							padding: 0px 20px;
+							color: #4c4cff;
+							font-family: "Roboto", Sans-serif;
+							font-size: 16px;
+							font-weight: 600px;
+						}
+						.fullpic
+						{
+							background-repeat: no-repeat;
+							background-size: cover;
+							border-radius: 50%;
+							min-height: 60px;
+							min-width: 60px;
+							background-image: url(/images/yulia.jpg);
+						}
+						.fullpic1
+						{
+							background-repeat: no-repeat;
+							background-size: cover;
+							border-radius: 50%;
+							min-height: 60px;
+							min-width: 60px;
+							background-image: url(/images/Eugene.jpg);
+						}
+						.fullpic2
+						{
+							background-repeat: no-repeat;
+							background-size: cover;
+							border-radius: 50%;
+							min-height: 60px;
+							min-width: 60px;
+							background-image: url(/images/Vdim.jpeg);
+						}
+						.fullpic3
+						{
+							background-repeat: no-repeat;
+							background-size: cover;
+							border-radius: 50%;
+							min-height: 60px;
+							min-width: 60px;
+							background-image: url(/images/Yura.jpg);
+						}
+					}
+				}			
+				
+			}
+			&:hover
+				{
+					background-color: #bdbdca77;
+				}
 		}
 	}
+	
+	
+
 }
 
 #FooterSection{

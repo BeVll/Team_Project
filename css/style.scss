@@ -462,8 +462,8 @@ $purple: #5754FF;
 		position: absolute;
 	}
 	.allinfo {
-		margin-left: 500px;
-		padding-top: 20px;
+		margin-left: 450px;
+		padding-top: 10px;
 		justify-content: center;
 		width: 50%;
 		height: 100%;
@@ -496,7 +496,7 @@ $purple: #5754FF;
 			width: 100%;
 			display: flex;
 			.buttV1{
-			
+				margin-left:50px;
 				width:400px;
 				height: 40px;
 				background-color: none;
@@ -509,7 +509,7 @@ $purple: #5754FF;
 	
 			}
 			.buttV2{
-			   right: 0;
+				margin-left: 30px;
 				width: 400px;
 				height: 40px;
 				background-color: none;

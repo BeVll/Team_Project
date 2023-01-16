@@ -463,17 +463,19 @@ $purple: #5754FF;
 
 #FooterSection{
 
-	padding-top: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
 	.maindiv
 	{
 		display: flex;
 
 		justify-content: center;
 		
-		align-items: center;
+		align-items: start;
 		.firstbox
 		{
-			border: 2px solid black;
+			
 			width: 400px;
 
 			.intel
@@ -496,7 +498,7 @@ $purple: #5754FF;
 				{
 					.sometext2
 					{
-							color: rgb(51, 51,51);
+							color: rgb(84, 84, 84);
 							font-size: 15px;
 							font-family: "Open Sans", Sans-serif;
 							font-weight: 100;
@@ -522,10 +524,10 @@ $purple: #5754FF;
 
 		.contactdiv
 		{
-			height: 100%;
-			padding-bottom: 37px;
+		
+			padding-bottom: 40px;
 			width: 225px;
-			border: 2px solid black;
+			
 			.mostinfo
 			{
 				padding: 20px;
@@ -595,7 +597,7 @@ $purple: #5754FF;
 		.thirdbox
 		{
 			width: 500px;
-			border: 2px solid black;
+			
 			
 			.outerbox
 			{
@@ -646,11 +648,13 @@ $purple: #5754FF;
 							background-color: #4c4cff;
 							height: .7px;
 						}
+						
 					}
 
 					.submitbutton
 					{
-						padding: 0 0 10px;
+						padding: 10px 0px;
+						
 						button
 						{
 							background-color: #4c4cff;
@@ -660,6 +664,7 @@ $purple: #5754FF;
 							border-radius: 3px;
 							color: whitesmoke;
 							font-weight: 400;
+							
 						}
 					}
 					
@@ -671,6 +676,26 @@ $purple: #5754FF;
 }
 
 #UnderFooterSection{
+
+	.bottom
+	{
+		
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+
+		background-color: rgb(33, 33, 33);
+		.ai{
+			padding: 8px;
+			color: white;
+			font-size: 16px;
+			text-align: center;
+			font-family: "Montserrat", Sans-serif;
+			font-weight: 500;
+		}
+	}
 
 }
 

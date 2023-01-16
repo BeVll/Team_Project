@@ -3,6 +3,7 @@ $white: #FFFFFF;
 $text: #333333;
 $purple: #5754FF;
 
+
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/Roboto-Regular.ttf");
@@ -238,7 +239,8 @@ $purple: #5754FF;
 		}
 		.buttKonsultacia:hover {
 			background-color: white;
-			color: #1916aa
+			color: #1916aa;
+			cursor: pointer;
 		}
    }
 }
@@ -254,6 +256,7 @@ $purple: #5754FF;
 	background-size: 100% auto;
 	position: relative;
 	.grab{
+		
 		height: 410px;
 		width:400px;
 		background-size: 105% auto;
@@ -262,7 +265,8 @@ $purple: #5754FF;
 		background-repeat: no-repeat;
 		z-index: 5;
 		position: absolute;
-		
+		animation-duration: 1.25s;
+	
 	}
 	.backcolor{
 		width: 100%;
@@ -272,7 +276,7 @@ $purple: #5754FF;
 		opacity:80% ;
 		position: absolute;
 	}
-	.allinfo {
+	.allinfo2 {
 		margin-left: 400px;
 		padding-top: 20px;
 		justify-content: center;
@@ -314,7 +318,8 @@ $purple: #5754FF;
 		}
 		.buttKonsultacia:hover {
 			background-color: white;
-			color: #1916aa
+			color: #1916aa;
+			cursor: pointer;
 		}
 	
    }
@@ -500,6 +505,7 @@ $purple: #5754FF;
 			z-index: 5;
 			width: 100%;
 			display: flex;
+			
 			.buttV1{
 				margin-left:50px;
 				
@@ -531,7 +537,8 @@ $purple: #5754FF;
 		
 		.buttKonsultacia:hover {
 			background-color: white;
-			color: #1916aa
+			color: #1916aa;
+			cursor: pointer;
 		}
 	
    }

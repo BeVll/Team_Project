@@ -526,6 +526,7 @@ $purple: #5754FF;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
 				z-index: 5;
+				transition: 0.6s;
 				&:hover {
 					animation: butAnim 0.6s linear alternate infinite;
 				}
@@ -536,7 +537,7 @@ $purple: #5754FF;
 				width: 400px;
 				height: 40px;
 				margin-top: 20px;
-				
+			    transition: 0.6s;
 				background-color: none;
 				border: 2px solid white;
 				background-image: url(/images/Group-10.png);

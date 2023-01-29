@@ -323,6 +323,8 @@ $purple: #5754FF;
 
 #PoslugySection{
 	padding: 70px 20%;
+	transition: margin-top 1s;
+	margin-top: 400px;
 	.header-section{
 		display: flex;
 		justify-content: center;
@@ -444,9 +446,11 @@ $purple: #5754FF;
 }
 
 #PortfolioSection{
+	transition: margin-top 1s;
 	background-color: #9595FF33;
 	padding: 70px;
 	display: flex;
+	margin-top: 500px;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;

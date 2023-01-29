@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body onscroll="animScroll()">
     <header id="header">
         <div class="container">
             <a href="/" class="logo_link">
@@ -273,7 +273,7 @@
             </table>
         </div>
     </section>
-    <section id="PortfolioSection">
+    <section id="PortfolioSection" >
         <div class="header-section">
             <div class="first">
                 <p> <strong>ГАЛЕРЕЯ НАШИХ РОБІТ</strong> </p>
@@ -921,6 +921,22 @@
                 behavior: "smooth"
             });
             console.log('dasdsa');
+        }
+
+        function animScroll(){
+            if(document.readyState == "complete"){
+                let poslugy =  document.getElementById("PoslugySection");
+                let portfolio =  document.getElementById("PortfolioSection");
+                // console.log(document.readyState,  window.innerHeight, document.documentElement.scrollTop, e.offsetTop);
+                
+                if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight){
+                    $("#PortfolioSection").css("margin-top", "0px");
+                }
+                else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight){
+                    $("#PoslugySection").css("margin-top", "0px");
+                }
+            }
+            
         }
     </script>
 </body>

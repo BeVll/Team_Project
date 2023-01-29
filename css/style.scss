@@ -913,7 +913,6 @@ body{
 
 html {
 	scroll-behavior: smooth;
-	overflow: hidden;
   }
 
 .slider_bg{
@@ -924,5 +923,92 @@ html {
 	z-index: 30;
 	top: 0;
 	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	.overflow{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		
+		z-index: 50;
+		.top-head{
+		position: relative;
+		height: 50px;
+		background-color: rgba(0, 0, 0, 0.28);
+			.close-btn{
+				border: 0;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				background-color: transparent;
+				transition: 0.4s;
+				height: 35px;
+				width: fit-content;
+				cursor: pointer;
+				&:hover{
+					background-color: rgba(255, 255, 255, 0.25);
+					span{
+						color: white;
+					}
+				}
+				span{
+					color: rgb(180, 175, 175);
+					font-size: 35px;
+					height: 35px;
+		
+				}
+			
+			}
+		}
+		.change-img{
+			background-color: transparent;
+			border: 0;
+			top: calc(50% - 40px);
+			position: absolute;
+			height: 45px;
+			padding: 0;
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover{
+				span{
+					color: white;
+				}
+			}
+		}
+		.left-btn{
+			left: 30px;	
+		}
+		.right-btn{
+			right: 30px;
+		}
+		.btn-changee-img{
+			font-size: 45px;
+			color: rgb(180, 175, 175);
+		}
+	}
+	.slider_items{
+		counter-reset: slide;
+		margin: 0 auto;
+		height: 100%;
+		display: flex;
+		justify-content: start;
+		min-width: 100%;
+		position: relative;
+
+		left: 0;
+		.slider_item{
+			width: 1000px;
+			counter-increment: slide;
+			position: relative;
+			height: 100%;
+			min-width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
 	
 }

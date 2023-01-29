@@ -806,19 +806,105 @@
         <img src="https://vr.kh.ua/wp-content/plugins/wpfront-scroll-top/images/icons/1.png" alt="">
     </button>
 
-    <!-- <div class="slider_bg">
+    <div class="slider_bg">
+        <div class="overflow">
+            <div class="top-head">
+                <button class="close-btn" onclick="closeSlider()">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <button class="left-btn change-img" onclick="sliderLeft()">
+                <span class="material-symbols-outlined btn-changee-img">
+                    chevron_left
+                </span>
+            </button>
+            <button class="right-btn change-img" onclick="sliderRight()">
+                <span class="material-symbols-outlined btn-changee-img">
+                    chevron_right
+                </span>
+            </button>
+        </div>
+        <div class="slider_items">
 
-    </div> -->
+        </div>
+        <img id="image" src="" alt="" height="100%">
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
     <script>
-        function showImage(){
-            const array = ["https://vr.kh.ua/wp-content/uploads/2021/06/44.png", "https://vr.kh.ua/wp-content/uploads/2021/06/43.png", "https://vr.kh.ua/wp-content/uploads/2021/06/42.png", "https://vr.kh.ua/wp-content/uploads/2021/06/41.png", 
+        var left_check = 0;
+        var pos = 0;
+        let array = ["https://vr.kh.ua/wp-content/uploads/2021/06/44.png", "https://vr.kh.ua/wp-content/uploads/2021/06/43.png", "https://vr.kh.ua/wp-content/uploads/2021/06/42.png", "https://vr.kh.ua/wp-content/uploads/2021/06/41.png", 
                            "https://vr.kh.ua/wp-content/uploads/2021/06/39.png", "https://vr.kh.ua/wp-content/uploads/2021/06/34.png", "https://vr.kh.ua/wp-content/uploads/2021/06/32.png", "https://vr.kh.ua/wp-content/uploads/2021/06/28.png",
                            "https://vr.kh.ua/wp-content/uploads/2021/06/27.png", "https://vr.kh.ua/wp-content/uploads/2021/06/21.png", "https://vr.kh.ua/wp-content/uploads/2021/06/20.png", "https://vr.kh.ua/wp-content/uploads/2021/06/18.png", 
                            "https://vr.kh.ua/wp-content/uploads/2021/06/8.png", "https://vr.kh.ua/wp-content/uploads/2021/06/6.png", "https://vr.kh.ua/wp-content/uploads/2021/06/4.png", "https://vr.kh.ua/wp-content/uploads/2021/06/3.png", 
                            "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-34.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-36.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-383.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-51-26.jpg", 
                            "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-51-271.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-16.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-152.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-163.jpg", 
-                        ]
+                        ];
+
+        load_slider();
+
+        function load_slider(){
+            for (let i = 0; i < array.length; i++) {
+                document.getElementsByClassName("slider_items")[0].innerHTML += 
+                `
+                <div class="slider_item">
+                    <img src="`+array[i]+`" alt="" height="100%">
+                </div>
+                `;
+            }
+        }
+
+        function sliderRight(){
+            if(pos != $(".slider_item").length-1){
+                let w = $(".slider_bg").css("width");
+                console.log(w);
+                w = w.replace("px", "");
+                left_check = left_check-w;
+                $(".slider_items").css("left", left_check);
+
+                pos++;
+            }
             
+        }
+
+        function sliderLeft(){
+            if(pos != 0){
+                let w = $(".slider_bg").css("width");
+                console.log(w);
+                w = w.replace("px", "");
+                left_check = left_check-(-w);
+                $(".slider_items").css("left", left_check);
+                left = $(".slider_items").css("left");
+                console.log(left);
+                pos--;
+            }
+            
+            
+        }
+
+        function closeSlider(){
+            document.getElementsByClassName("slider_bg")[0].style.display = "none";
+            $("html").css("overflow", "auto");
+        }
+
+        function showImage(id){
+           
+            $("html").css("overflow", "hidden");
+            let w = $(".slider_bg").css("width");
+            w = w.replace("px", "");
+            left_check = -w*(id);
+            $(".slider_items").css("left", left_check);
+            $(".slider_items").css("transition", "all 0s");
+            setTimeout(() => {$(".slider_items").css("transition", "all 0.7s");}, 700);
+            
+            document.getElementsByClassName("slider_bg")[0].style.display = "flex";
+            pos = id;
+            console.log(pos, id);
         }
         function callMeClick(){
             console.log(1);

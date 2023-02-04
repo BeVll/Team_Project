@@ -50,7 +50,7 @@
              <div class="text1">ВИСОТНІ РОБОТИ<br>У ХАРКОВІ</div>
             <div class="text2">Виходячи з індивідуальних даних і вимог замовника, запропонуємо <br>
                 оптимальне рішення, дамо рекомендації по вибору матеріалів.</div>
-            <div class="buttKonsultacia">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</div>
+            <div class="buttKonsultacia" onclick="callMeClick()">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</div>
           </div>
     </section>
     <section id="PronasSection">
@@ -95,7 +95,7 @@
           
             <div class="text1_2">НЕ ЗНАЙШЛИ ВІДПОВІДЬ НА<br>СВОЇ ПИТАННЯ?</div>
            <div class="text2">Залиште на сайті своє звернення або зателефонуйте за номерами +380660000000 ,<br>+380660000000 та отримайте безкоштовну консультацію спеціаліста!</div>
-           <div class="buttKonsultacia">ОТРИМАТИ КОНСУЛЬТАЦІЮ</div>
+           <div class="buttKonsultacia" onclick="callMeClick()">ОТРИМАТИ КОНСУЛЬТАЦІЮ</div>
          </div>
              
     </section>
@@ -1029,6 +1029,7 @@
                 let poslugy =  document.getElementById("PoslugySection");
                 let portfolio =  document.getElementById("PortfolioSection");
                 let konsul =  document.getElementById("KonsulSection");
+                let google =  document.getElementById("FeedbackGoogleSection");
                 // console.log(document.readyState,  window.innerHeight, document.documentElement.scrollTop, e.offsetTop);
                 
                 if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight){
@@ -1037,6 +1038,7 @@
                 else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight){
                     $("#PoslugySection").css("margin-top", "0px");
                 }
+                
                 else if(document.documentElement.scrollTop > konsul.offsetTop-window.innerHeight+200){
                     $("#grab").css({
                         top: 0,
@@ -1044,6 +1046,9 @@
                     });
                     $("#allinfo").css("margin-left", "400px");
                     console.log($("#grab").offset())
+                }
+                if(document.documentElement.scrollTop > google.offsetTop-window.innerHeight){
+                    $("#FeedbackGoogleSection").css("margin-top", "0px");
                 }
             }
             

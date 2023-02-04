@@ -1,0 +1,30 @@
+body {
+  background-image: url(/Team_Project/images/bg_dursec.jpg);
+}
+
+div {
+  text-align: center;
+  padding-top: 170px;
+}
+div h1 {
+  font-size: 82px;
+  color: white;
+  font-family: "Open Sans", Sans-serif;
+}
+div p {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 16px;
+  color: white;
+}
+div button {
+  height: 50px;
+  width: 160px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+div button .ppp a {
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}/*# sourceMappingURL=style2.css.map */

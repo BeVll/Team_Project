@@ -87,16 +87,14 @@
        
     </section>
     <section id="KonsulSection">  
-        <div class="grab"></div>
+        <div class="grab" id="grab"></div>
         <div class="backcolor"></div>
    
-        <div class="allinfo">
+        <div class="allinfo" id="allinfo">
           
             <div class="text1_2">НЕ ЗНАЙШЛИ ВІДПОВІДЬ НА<br>СВОЇ ПИТАННЯ?</div>
            <div class="text2">Залиште на сайті своє звернення або зателефонуйте за номерами +380660000000 ,<br>+380660000000 та отримайте безкоштовну консультацію спеціаліста!</div>
            <div class="buttKonsultacia">ОТРИМАТИ КОНСУЛЬТАЦІЮ</div>
-           
-          
          </div>
              
     </section>
@@ -922,18 +920,35 @@
             });
             console.log('dasdsa');
         }
-
+        window.onload = function() {
+            let pronas =  document.getElementById("PronasSection");
+            $("#PronasSection").css("margin-top", "0px");
+        };
+        if(document.readyState == "complete"){
+            console.log()
+            if(document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop <= 100){
+                
+            }
+        }
         function animScroll(){
             if(document.readyState == "complete"){
                 let poslugy =  document.getElementById("PoslugySection");
                 let portfolio =  document.getElementById("PortfolioSection");
+                let konsul =  document.getElementById("KonsulSection");
                 // console.log(document.readyState,  window.innerHeight, document.documentElement.scrollTop, e.offsetTop);
                 
-                if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight){
+                if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight-50){
                     $("#PortfolioSection").css("margin-top", "0px");
                 }
-                else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight){
+                else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight-50){
                     $("#PoslugySection").css("margin-top", "0px");
+                }
+                else if(document.documentElement.scrollTop > konsul.offsetTop-window.innerHeight-50){
+                    $("#grab").css({
+                        top: 0,
+                        left: $("#grab").parent().offset().left + 1100
+                    });
+                    console.log($("#grab").offset())
                 }
             }
             

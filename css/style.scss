@@ -114,7 +114,8 @@ $purple: #5754FF;
 	padding: 0 15%; 
     padding-top: 5%;
 	position: relative;
-
+	transition: margin-top 1s;
+	margin-top: 400px;
 	.op 
 	{
 		z-index: 0;
@@ -198,6 +199,7 @@ $purple: #5754FF;
 	background-position: 0px -211px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	
 	.allinfo {
 		margin-left: 400px;
 		justify-content: center;
@@ -205,7 +207,7 @@ $purple: #5754FF;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-
+		
 		.text1 {
 
 			font-family: "Roboto-Black", Sans-serif;
@@ -258,11 +260,11 @@ $purple: #5754FF;
 		width:400px;
 		background-size: 105% auto;
 		background-image: url(../images/grab.png);
-		right: 350px;
+		left: 1700px;
 		background-repeat: no-repeat;
 		z-index: 5;
 		position: absolute;
-		
+		transition: left 1.5s;
 	}
 	.backcolor{
 		width: 100%;
@@ -281,6 +283,7 @@ $purple: #5754FF;
 		display: flex;
 		flex-direction: column;
 		z-index: 5;
+		transition: 1s;
 		.text1_2{
 
 			font-family: "Roboto-Black", Sans-serif;

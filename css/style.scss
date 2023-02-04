@@ -904,18 +904,30 @@ $purple: #5754FF;
 					.submitbutton
 					{
 						padding: 10px 0px;
+
 						
-						button
-						{
-							background-color: #4c4cff;
-							width: 100%;
-							height: 40px;
-							border-style: none;
-							border-radius: 3px;
-							color: whitesmoke;
-							font-weight: 400;
-							
+
+							button
+							{
+
+										background-color: #4c4cff;
+										width: 100%;
+										height: 40px;
+										border-style: none;
+										border-radius: 3px;
+										
+										span
+										{
+											.linkup
+											{
+												text-decoration: none;
+												color: whitesmoke;
+												font-weight: 400;
+											}
+										}			
+							}
 						}
+						
 					}
 					
 				}
@@ -923,7 +935,7 @@ $purple: #5754FF;
 		}
 
 	}
-}
+
 
 #UnderFooterSection{
 

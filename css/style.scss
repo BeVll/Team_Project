@@ -275,7 +275,7 @@ $purple: #5754FF;
 		position: absolute;
 	}
 	.allinfo {
-		margin-left: 400px;
+		margin-left: 0px;
 		padding-top: 20px;
 		justify-content: center;
 		width: 50%;
@@ -283,7 +283,8 @@ $purple: #5754FF;
 		display: flex;
 		flex-direction: column;
 		z-index: 5;
-		transition: 1s;
+		transition: 1.5s;
+
 		.text1_2{
 
 			font-family: "Roboto-Black", Sans-serif;

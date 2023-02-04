@@ -937,17 +937,18 @@
                 let konsul =  document.getElementById("KonsulSection");
                 // console.log(document.readyState,  window.innerHeight, document.documentElement.scrollTop, e.offsetTop);
                 
-                if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight-50){
+                if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight){
                     $("#PortfolioSection").css("margin-top", "0px");
                 }
-                else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight-50){
+                else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight){
                     $("#PoslugySection").css("margin-top", "0px");
                 }
-                else if(document.documentElement.scrollTop > konsul.offsetTop-window.innerHeight-50){
+                else if(document.documentElement.scrollTop > konsul.offsetTop-window.innerHeight+200){
                     $("#grab").css({
                         top: 0,
                         left: $("#grab").parent().offset().left + 1100
                     });
+                    $("#allinfo").css("margin-left", "400px");
                     console.log($("#grab").offset())
                 }
             }

@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body onscroll="animScroll()">
     <header id="header">
         <div class="container">
             <a href="/" class="logo_link">
@@ -16,25 +17,25 @@
             </a>
             <ul class="header-menu">
                 <li class="menu-item item-active">
-                    <a href="#">ГОЛОВНА</a> 
+                    <a href="#MainSection">ГОЛОВНА</a> 
                 </li>
                 <li class="menu-item">
-                    <a href="#">ПРО КОМПАНІЮ</a> 
+                    <a href="#PronasSection">ПРО КОМПАНІЮ</a> 
                 </li>
                 <li class="menu-item">
-                    <a href="#">ПОСЛУГИ</a> 
+                    <a href="#PoslugySection">ПОСЛУГИ</a> 
                 </li>
                 <li class="menu-item">
-                    <a href="#">ПОРТФОЛІО</a> 
+                    <a href="#PortfolioSection">ПОРТФОЛІО</a> 
                 </li>
                 <li class="menu-item">
-                    <a href="#">ВІДГУКИ</a> 
+                    <a href="#FeedbackGoogleSection">ВІДГУКИ</a> 
                 </li>
                 <li class="menu-item">
-                    <a href="#">КОНТАКТИ</a> 
+                    <a href="#FooterSection">КОНТАКТИ</a> 
                 </li>
             </ul>
-            <button class="call_me">
+            <button class="call_me" onclick="callMeClick()">
                 ЗАТЕЛЕФОНУЙТЕ МЕНІ
             </button>
             <select name="lang" id="" class="select_lang">
@@ -87,16 +88,14 @@
        
     </section>
     <section id="KonsulSection">  
-        <div class="grab"></div>
+        <div class="grab" id="grab"></div>
         <div class="backcolor"></div>
    
-        <div class="allinfo2">
+        <div class="allinfo" id="allinfo">
           
             <div class="text1_2">НЕ ЗНАЙШЛИ ВІДПОВІДЬ НА<br>СВОЇ ПИТАННЯ?</div>
            <div class="text2">Залиште на сайті своє звернення або зателефонуйте за номерами +380660000000 ,<br>+380660000000 та отримайте безкоштовну консультацію спеціаліста!</div>
            <div class="buttKonsultacia">ОТРИМАТИ КОНСУЛЬТАЦІЮ</div>
-           
-          
          </div>
              
     </section>
@@ -273,8 +272,369 @@
             </table>
         </div>
     </section>
-    <section id="PortfolioSection">
-        
+    <section id="PortfolioSection" >
+        <div class="header-section">
+            <div class="first">
+                <p> <strong>ГАЛЕРЕЯ НАШИХ РОБІТ</strong> </p>
+            </div>
+            <div class="text2">
+                <h2 > <strong>ПОРТФОЛІО</strong> </h2>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="content">
+            <table cellspacing="20">
+                <tr>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/44.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(0)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/43.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(1)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/42.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(2)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/41.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(3)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/39.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(4)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/34.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(5)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/32.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(6)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/28.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(7)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/27.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(8)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/21.png');"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(9)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/20.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(10)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/18.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(11)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/8.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(12)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/6.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(13)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/4.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(14)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/3.png')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(15)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-34.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(16)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-36.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(17)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-383.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(18)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-51-26.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(19)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-51-271.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(20)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-16.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(21)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-152.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(22)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                    <td>
+                        <div class="fill_content2" value="0">
+                            <div class="img_td" style="background-image: url('https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-163.jpg')"></div>
+                            <div class="onhover">
+                                <button onclick="showImage(23)">
+                                    <span class="material-symbols-outlined">
+                                        zoom_in
+                                    </span>
+                                </button>
+                                
+                            </div>
+                        </div>  
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
     <section id="FeedbackSection">
 
@@ -511,18 +871,177 @@
         
     </section>
 
-
+    <div id="callme" class="modal">
+        <div class="modal-block">
+            <h1 class="name">ЗАЛИШТЕ ЗАЯВКУ</h1>
+            <span class="description">Найближчим часом Вам зателефонує менеджер!</span>
+            <form action="">
+                <input type="text" placeholder="Ім'я">
+            <input type="tel" placeholder="Телефон">
+            <button class="subm" type="submit">НАДІСЛАТИ</button>
+            </form>
+            
+            <button class="close" onclick="closeById('callme')">
+                <span class="material-symbols-outlined">
+                close
+                </span>
+            </button>
+        </div>
+    </div>
 
     <button type="button" onclick="toTop()" class="toUp">
         <img src="https://vr.kh.ua/wp-content/plugins/wpfront-scroll-top/images/icons/1.png" alt="">
     </button>
+
+    <div class="slider_bg">
+        <div class="overflow">
+            <div class="top-head">
+                <button class="close-btn" onclick="closeSlider()">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <button class="left-btn change-img" onclick="sliderLeft()">
+                <span class="material-symbols-outlined btn-changee-img">
+                    chevron_left
+                </span>
+            </button>
+            <button class="right-btn change-img" onclick="sliderRight()">
+                <span class="material-symbols-outlined btn-changee-img">
+                    chevron_right
+                </span>
+            </button>
+        </div>
+        <div class="slider_items">
+
+        </div>
+        <img id="image" src="" alt="" height="100%">
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
     <script>
+        var left_check = 0;
+        var pos = 0;
+        let array = ["https://vr.kh.ua/wp-content/uploads/2021/06/44.png", "https://vr.kh.ua/wp-content/uploads/2021/06/43.png", "https://vr.kh.ua/wp-content/uploads/2021/06/42.png", "https://vr.kh.ua/wp-content/uploads/2021/06/41.png", 
+                           "https://vr.kh.ua/wp-content/uploads/2021/06/39.png", "https://vr.kh.ua/wp-content/uploads/2021/06/34.png", "https://vr.kh.ua/wp-content/uploads/2021/06/32.png", "https://vr.kh.ua/wp-content/uploads/2021/06/28.png",
+                           "https://vr.kh.ua/wp-content/uploads/2021/06/27.png", "https://vr.kh.ua/wp-content/uploads/2021/06/21.png", "https://vr.kh.ua/wp-content/uploads/2021/06/20.png", "https://vr.kh.ua/wp-content/uploads/2021/06/18.png", 
+                           "https://vr.kh.ua/wp-content/uploads/2021/06/8.png", "https://vr.kh.ua/wp-content/uploads/2021/06/6.png", "https://vr.kh.ua/wp-content/uploads/2021/06/4.png", "https://vr.kh.ua/wp-content/uploads/2021/06/3.png", 
+                           "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-34.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-36.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-48-383.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-51-26.jpg", 
+                           "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-51-271.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-16.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-152.jpg", "https://vr.kh.ua/wp-content/uploads/2021/06/yzobrazhenye_viber_2021-06-27_09-53-163.jpg", 
+                        ];
+
+        load_slider();
+
+        function load_slider(){
+            for (let i = 0; i < array.length; i++) {
+                document.getElementsByClassName("slider_items")[0].innerHTML += 
+                `
+                <div class="slider_item">
+                    <img src="`+array[i]+`" alt="" height="100%">
+                </div>
+                `;
+            }
+        }
+
+        function sliderRight(){
+            if(pos != $(".slider_item").length-1){
+                let w = $(".slider_bg").css("width");
+                console.log(w);
+                w = w.replace("px", "");
+                left_check = left_check-w;
+                $(".slider_items").css("left", left_check);
+
+                pos++;
+            }
+            
+        }
+
+        function sliderLeft(){
+            if(pos != 0){
+                let w = $(".slider_bg").css("width");
+                console.log(w);
+                w = w.replace("px", "");
+                left_check = left_check-(-w);
+                $(".slider_items").css("left", left_check);
+                left = $(".slider_items").css("left");
+                console.log(left);
+                pos--;
+            }
+            
+            
+        }
+
+        function closeSlider(){
+            document.getElementsByClassName("slider_bg")[0].style.display = "none";
+            $("html").css("overflow", "auto");
+        }
+
+        function showImage(id){
+           
+            $("html").css("overflow", "hidden");
+            let w = $(".slider_bg").css("width");
+            w = w.replace("px", "");
+            left_check = -w*(id);
+            $(".slider_items").css("left", left_check);
+            $(".slider_items").css("transition", "all 0s");
+            setTimeout(() => {$(".slider_items").css("transition", "all 0.7s");}, 700);
+            
+            document.getElementsByClassName("slider_bg")[0].style.display = "flex";
+            pos = id;
+            console.log(pos, id);
+        }
+        function callMeClick(){
+            console.log(1);
+            let modal = document.getElementById('callme');
+            modal.style.display = 'flex';
+        }
+        function closeById(id){
+            let modal = document.getElementById(id);
+            modal.style.display = 'none';
+        }
         function toTop(){
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
             console.log('dasdsa');
+        }
+        window.onload = function() {
+            let pronas =  document.getElementById("PronasSection");
+            $("#PronasSection").css("margin-top", "0px");
+        };
+        if(document.readyState == "complete"){
+            console.log()
+            if(document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop <= 100){
+                
+            }
+        }
+        function animScroll(){
+            if(document.readyState == "complete"){
+                let poslugy =  document.getElementById("PoslugySection");
+                let portfolio =  document.getElementById("PortfolioSection");
+                let konsul =  document.getElementById("KonsulSection");
+                // console.log(document.readyState,  window.innerHeight, document.documentElement.scrollTop, e.offsetTop);
+                
+                if(document.documentElement.scrollTop > portfolio.offsetTop-window.innerHeight){
+                    $("#PortfolioSection").css("margin-top", "0px");
+                }
+                else if(document.documentElement.scrollTop > poslugy.offsetTop-window.innerHeight){
+                    $("#PoslugySection").css("margin-top", "0px");
+                }
+                else if(document.documentElement.scrollTop > konsul.offsetTop-window.innerHeight+200){
+                    $("#grab").css({
+                        top: 0,
+                        left: $("#grab").parent().offset().left + 1100
+                    });
+                    $("#allinfo").css("margin-left", "400px");
+                    console.log($("#grab").offset())
+                }
+            }
+            
         }
     </script>
 </body>

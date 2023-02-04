@@ -106,7 +106,7 @@ $purple: #5754FF;
 }
 #PronasSection {
 	padding-top: 60px;
-	background-image: url(/images/bg_dursec.jpg);
+	background-image: url(../images/bg_dursec.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	animation-duration: 1.25s;
@@ -115,7 +115,8 @@ $purple: #5754FF;
 	padding: 0 15%; 
     padding-top: 5%;
 	position: relative;
-
+	transition: margin-top 1s;
+	margin-top: 400px;
 	.op 
 	{
 		z-index: 0;
@@ -169,7 +170,7 @@ $purple: #5754FF;
         padding: 0;
 		.soldphoto {
 			z-index: 10;
-			background-image: url(/images/SoldierPicture.png);
+			background-image: url(../images/SoldierPicture.png);
 			height: 780px;
 			min-width: 595px;
 			background-repeat: no-repeat;
@@ -195,10 +196,11 @@ $purple: #5754FF;
 	height:520px;
 	margin-top: 70px;
 	margin-bottom: 0px;
-	background-image: url(/images/MainSection_bacground.png);
+	background-image: url(../images/MainSection_bacground.png);
 	background-position: 0px -211px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	
 	.allinfo {
 		margin-left: 400px;
 		justify-content: center;
@@ -206,7 +208,7 @@ $purple: #5754FF;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-
+		
 		.text1 {
 
 			font-family: "Roboto-Black", Sans-serif;
@@ -249,7 +251,7 @@ $purple: #5754FF;
 	height:410px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-image: url(/images/bg_22.jpg);
+	background-image: url(../images/bg_22.jpg);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -259,13 +261,12 @@ $purple: #5754FF;
 		height: 410px;
 		width:400px;
 		background-size: 105% auto;
-		background-image: url(/images/grab.png);
-		right: 350px;
+		background-image: url(../images/grab.png);
+		left: 1700px;
 		background-repeat: no-repeat;
 		z-index: 5;
 		position: absolute;
-		animation-duration: 1.25s;
-	
+		transition: left 1.5s;
 	}
 	.backcolor{
 		width: 100%;
@@ -275,8 +276,8 @@ $purple: #5754FF;
 		opacity:80% ;
 		position: absolute;
 	}
-	.allinfo2 {
-		margin-left: 400px;
+	.allinfo {
+		margin-left: 0px;
 		padding-top: 20px;
 		justify-content: center;
 		width: 50%;
@@ -284,6 +285,8 @@ $purple: #5754FF;
 		display: flex;
 		flex-direction: column;
 		z-index: 5;
+		transition: 1.5s;
+
 		.text1_2{
 
 			font-family: "Roboto-Black", Sans-serif;
@@ -327,6 +330,8 @@ $purple: #5754FF;
 
 #PoslugySection{
 	padding: 70px 20%;
+	transition: margin-top 1s;
+	margin-top: 400px;
 	.header-section{
 		display: flex;
 		justify-content: center;
@@ -448,7 +453,118 @@ $purple: #5754FF;
 }
 
 #PortfolioSection{
+	transition: margin-top 1s;
+	background-color: #9595FF33;
+	padding: 70px;
+	display: flex;
+	margin-top: 500px;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	.header-section{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		.first {
+			font-family: "Roboto", sans-serif;
+			font-size: 16px;
+			text-align: center;
+			color: $text;
+			display: block;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 27px;
+			-webkit-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			text-size-adjust: 100%;
+			z-index: 10;
+		}
+		.text2 {
+			color: $text;
+			text-align: center;
+			font-size: 43px;
+			font-family: 'Roboto-Black', sans-serif;
+			z-index: 10;
+			display: block;
+		}
+		.line {
+			background-color: $purple;
+			width: 180px;
+			height: 8px;
+			z-index: 10;
+		}
+	}
+	.content{
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		table{
+			width: fit-content;
+			tr{
+				height: 265px;
+				td{
+					height: 265px;
+					width: 265px;
+					overflow: hidden;
+					.fill_content2{
+						width: 100%;
+						height: 100%;
+						position: relative;
+						transition: 1s;
+						&:hover {
+							.onhover{
+								opacity: 100;
+							}
+						}
+						.img_td{
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							background-size: cover;
+						}
+						.onhover{
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							z-index: 5;
+							justify-content: center;
+							display: flex;
+							align-items: center;
+							background-color: rgba(0, 0, 0, 0.4);
+							transition: 0.4s;
+							opacity: 0;
+							button{
+								background-color: transparent;
+								border: 0;
+								cursor: pointer;
+								padding: 0;
+								&:hover{
+									span{
+										transform: rotateZ(90deg);
+										opacity: 70%;
+									}
+								}
+								span{
+									color: $white;
+									font-size: 55px;
+									font-weight: bold;
+									transition: 0.4s;
+								}
+							}
+						}
+					}
+					
+					
+				}
+			}
+		}
 
+	}
 }
 
 #FeedbackSection{
@@ -456,7 +572,7 @@ $purple: #5754FF;
 	height:350px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-image: url(/images/back3.jpeg);
+	background-image: url(../images/back3.jpeg);
 	background-position: 0px -220px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -512,7 +628,7 @@ $purple: #5754FF;
 				height: 40px;
 				background-color: none;
 				border: 2px solid white;
-				background-image: url(/images/Group-9.png);
+				background-image: url(../images/Group-9.png);
 				background-position: 0px 0px;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
@@ -525,7 +641,7 @@ $purple: #5754FF;
 				height: 40px;
 				background-color: none;
 				border: 2px solid white;
-				background-image: url(/images/Group-10.png);
+				background-image: url(../images/Group-10.png);
 				background-position: 0px 0px;
 				background-repeat: no-repeat;
 				background-size: 100% auto;
@@ -651,7 +767,7 @@ $purple: #5754FF;
 							border-radius: 50%;
 							min-height: 60px;
 							min-width: 60px;
-							background-image: url(/images/yulia.jpg);
+							background-image: url(../images/yulia.jpg);
 						}
 						.fullpic1
 						{
@@ -660,7 +776,7 @@ $purple: #5754FF;
 							border-radius: 50%;
 							min-height: 60px;
 							min-width: 60px;
-							background-image: url(/images/Eugene.jpg);
+							background-image: url(../images/Eugene.jpg);
 						}
 						.fullpic2
 						{
@@ -669,7 +785,7 @@ $purple: #5754FF;
 							border-radius: 50%;
 							min-height: 60px;
 							min-width: 60px;
-							background-image: url(/images/Vdim.jpeg);
+							background-image: url(../images/Vdim.jpeg);
 						}
 						.fullpic3
 						{
@@ -678,7 +794,7 @@ $purple: #5754FF;
 							border-radius: 50%;
 							min-height: 60px;
 							min-width: 60px;
-							background-image: url(/images/Yura.jpg);
+							background-image: url(../images/Yura.jpg);
 						}
 					}
 				}			
@@ -913,4 +1029,211 @@ $purple: #5754FF;
 body{
     height: 100%;
     top: 0;
+}
+
+.modal{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 20; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+	justify-content: center;
+	align-items: center;
+	.modal-block{
+		background-color: #fefefe;
+		margin: auto;
+		padding: 30px 20px;
+		border: 0;
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		.name{
+			color: $purple;
+			font-family: "Roboto-Black", Sans-serif;
+			font-size: 32px;
+		}
+		.description{
+			text-align: center;
+			color: $text;
+			font-family: "Open Sans", Sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			opacity: 85%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		form{
+			display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+			input{
+				width: 430px;
+				padding: 12px;
+				margin: 5px 0;
+				color: rgb(122, 122, 122);
+				font-family: "Roboto", Sans-serif;
+				font-size: 15px;
+				border: solid 1px rgb(118, 118, 118);
+				border-radius: 2px;
+				transition: 0.4s;
+				box-shadow: 0;
+				&:focus{
+					outline: none;
+					border: solid 1px $purple;
+				}
+				&::placeholder{
+					color: rgb(190, 189, 189);
+				}
+				&[type="tel"]{
+					
+					&:focus{
+						border: solid 1px rgb(190, 189, 189);
+					}
+				}
+			}
+			.subm{
+				background-color: $purple;
+				color: $white;
+				font-family: "Roboto-Bold", Sans-serif;
+				font-size: 16px;
+				width: 100%;
+				border: 0;
+				padding: 9px 0;
+				margin-top: 5px;
+				transition: 0.4s;
+				cursor: pointer;
+				border: solid 2px $purple;
+				&:hover{
+					background-color: $white;
+					color: $purple;
+				}
+			}
+		}
+		
+		.close{
+			background-color: transparent;
+			border: 0;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			cursor: pointer;
+			span{
+				font-size: 18px;
+				font-weight: bold;
+				color: $text;
+			}
+		}
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+  }
+
+.slider_bg{
+	background-color: #000000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 30;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	.overflow{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		
+		z-index: 50;
+		.top-head{
+		position: relative;
+		height: 50px;
+		background-color: rgba(0, 0, 0, 0.28);
+			.close-btn{
+				border: 0;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				background-color: transparent;
+				transition: 0.4s;
+				height: 35px;
+				width: fit-content;
+				cursor: pointer;
+				&:hover{
+					background-color: rgba(255, 255, 255, 0.25);
+					span{
+						color: white;
+					}
+				}
+				span{
+					color: rgb(180, 175, 175);
+					font-size: 35px;
+					height: 35px;
+		
+				}
+			
+			}
+		}
+		.change-img{
+			background-color: transparent;
+			border: 0;
+			top: calc(50% - 40px);
+			position: absolute;
+			height: 45px;
+			padding: 0;
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover{
+				span{
+					color: white;
+				}
+			}
+		}
+		.left-btn{
+			left: 30px;	
+		}
+		.right-btn{
+			right: 30px;
+		}
+		.btn-changee-img{
+			font-size: 45px;
+			color: rgb(180, 175, 175);
+		}
+	}
+	.slider_items{
+		counter-reset: slide;
+		margin: 0 auto;
+		height: 100%;
+		display: flex;
+		justify-content: start;
+		min-width: 100%;
+		position: relative;
+
+		left: 0;
+		.slider_item{
+			width: 1000px;
+			counter-increment: slide;
+			position: relative;
+			height: 100%;
+			min-width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	
 }

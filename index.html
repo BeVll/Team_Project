@@ -878,9 +878,9 @@
         <div class="modal-block">
             <h1 class="name">ЗАЛИШТЕ ЗАЯВКУ</h1>
             <span class="description">Найближчим часом Вам зателефонує менеджер!</span>
-            <form action="">
-                <input type="text" placeholder="Ім'я">
-            <input type="tel" placeholder="Телефон">
+            <form action="send.php" method="post">
+                <input type="text" placeholder="Ім'я" name="username" required>
+            <input type="tel" placeholder="Телефон" name="number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required>
             <button class="subm" type="submit">НАДІСЛАТИ</button>
             </form>
             

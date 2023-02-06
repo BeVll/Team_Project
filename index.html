@@ -835,25 +835,28 @@
                         </div>
 
                         <div class="everything">
-                            <div class="FullName">
-                                <input type="text" placeholder="Ім'я" class="inp">
-                                <hr class="line">
-                            </div>
-
-                            
-
-                            <div class="telephone">
-                                <input type="text" placeholder="Телефон" class="inp">
-                                <hr class="line">
-                            </div>
-                                 
+                            <form action="send.php" method="post">
+                                <div class="FullName">
+                                    <input type="text" placeholder="Ім'я" class="inp" name="username" required>
+                                    <hr class="line">
+                                </div>
+    
                                 
+    
+                                <div class="telephone">
+                                    <input type="text" placeholder="Телефон" class="inp" name="number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required>
+                                    <hr class="line">
+                                </div>
+                                     
+                                    
+                                
+                                <div class="submitbutton">
+                                    <button type="submit">           
+                                            ОТРИМАТИ КОНСУЛЬТАЦІЮ                                  
+                                    </button>
+                                </div>
+                            </form>
                             
-                            <div class="submitbutton">
-                                <a href="newpage.html">           
-                                        ОТРИМАТИ КОНСУЛЬТАЦІЮ                                  
-                                </a>
-                            </div>
                         </div>
 
                     </div>
